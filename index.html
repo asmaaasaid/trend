@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <section class="container-fluid py-5 bg-light">
+    <div class="row gy-3">
+      <div class="col-md-3">
+        <nav class="navbar align-items-start shadow-lg pt-5 position-fixed col-md-3 top-0 start-0  bottom-0 navbar-expand-lg bg-dark">
+          <div class="container-fluid flex-column">
+            <a class="navbar-brand text-uppercase " href="#"><h1>trend</h1></a>
+            <div class="mt-4" id="navbarNav">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item mb-3 rounded-2 text-center text-capitalize shadow px-4 d-flex align-items-center ">
+                  <i class="fa-solid fa-video me-3"></i>
+                  <a class="nav-link active" aria-current="page" >movie</a>
+                </li>
+                <li class="nav-item mb-3 rounded-2 text-center text-capitalize shadow px-4 d-flex align-items-center">
+                  <i class="fa-solid fa-user me-3"></i>
+                  <a class="nav-link" >person</a>
+                </li>
+                <li class="nav-item mb-3 rounded-2 text-center text-uppercase shadow px-4 d-flex align-items-center">
+                  <i class="fa-solid fa-tv me-3"></i>
+                  <a class="nav-link" >tv</a>
+                </li>
+              </ul>
+            </div>
+            <div class=" d-flex flex-column py-4">
+              <i class="fa-brands fa-youtube mb-4 fs-3 text-danger"></i>
+              <i class="fa-brands fa-tiktok mb-4 fs-3 text-danger"></i>
+              <i class="fa-brands fa-facebook mb-4 fs-3 text-danger"></i>
+              <i class="fa-brands fa-twitter mb-4 fs-3 text-danger"></i>
+              <i class="fa-solid fa-wifi fs-3 text-danger"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-9 image-container">
+        <div class="row gy-3" id="demo">
+        </div>
+      </div>
+    </div>
+   </section>
+   <div class="layout container-fluid align-items-center justify-content-center px-5">
+    <i class="fa-solid fa-circle-arrow-right right-btn fs-4 text-light"></i>
+    <i class="fa-solid fa-circle-arrow-left left-btn fs-4 text-light"></i>
+        <div class="row my-5  bg-light w-75 mx-auto p-3 rounded ">
+          <div class="col-md-5">
+            <img src="image/apparel-1850804_640.jpg" class="w-100 inner-img" alt="">
+          </div>
+          <div class="col-md-7 d-flex justify-content-center flex-column ps-2">
+            <i class="fa-solid fa-rectangle-xmark close-btn text-danger fs-3"></i>
+          
+            <ul class="text-capitalize w-100">
+              <li><span class="fs-5 fw-medium">title:</span> <span id="title"></span> </li>
+              <li><span class="fs-5 fw-medium">media type:</span> <span id="type"></span> </li>
+              <li><span class="fs-5 fw-medium">overview:</span> <span id="over-view"></span> </li>
+              <li><span class="fs-5 fw-medium">vote average:</span>  <span class="badge text-bg-secondary" id="rate"></span></li>
+            </ul>
+          </div>
+        </div>
+  </div>
+   
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

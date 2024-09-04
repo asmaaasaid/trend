@@ -1,0 +1,79 @@
+
+.navbar-brand h1 
+{
+    color: transparent !important;
+    background-image: url('../image/apparel-1850804_640.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-clip: text;
+    font-size: 55px !important;
+    font-weight: bolder;
+}
+.nav-item
+{
+    background-color: white ;
+    cursor: pointer;
+    transition: all 0.9s linear;
+}
+.nav-item a , .nav-item i{transition: all 0.4s linear;}
+.nav-item:hover
+{
+    background-color: #dc3545 !important;
+}
+.nav-item:hover a , .nav-item:hover i
+{
+    color: whitesmoke !important;
+}
+.layout
+{
+
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+    display: none;
+}
+.second-layer
+{
+    height: 100%;
+}
+.close-btn 
+{
+    position: relative;
+    left: 90%;
+   
+    cursor: pointer;
+}
+.right-btn
+{
+    position: relative;
+    left: 90%;
+    cursor: pointer;
+}
+.left-btn
+{
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+}
+.inner-img
+{
+    height: 400px;
+}
+.disabled-btn
+{
+    color: rgb(82, 81, 81) !important;
+    cursor: default;
+}
+@media screen and (max-width:768px){
+   .navbar
+   {
+    position: static !important;
+   }
+}
